@@ -115,7 +115,7 @@ label {
 
 
 select {
-    width: 235px;
+    width: 90%;
     height: 35px;
     padding: 6px 12px;
     font-size: 14px;
@@ -275,7 +275,7 @@ select {
 
 input[type=text] {
 
-width: 210px;
+width: 90%;
     height: 22px;
     padding: 6px 12px;
     font-size: 14px;
@@ -413,4 +413,12 @@ h5 {
     #divListaAsis3{
      display: none;   
     }
+}
+.todosF {
+    display: table;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
 }
