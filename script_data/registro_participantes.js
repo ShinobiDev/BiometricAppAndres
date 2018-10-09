@@ -32,6 +32,12 @@ function iniciar_evento_participantes(){
              datos.created_at=horaCliente();
              datos.tipo_registro="nuevo";
              datos.state=true;
+
+
+             if(rgxNumero.test(datos.documento)==false){
+                mostrarMensaje("Por favor ingresa solo números enteros positivos y sin puntos");
+                return false; 
+             }
              if(datos.etnia!="0"){
                 if(datos.etnia=="Otro"){
                      datos.sub_etnia=document.getElementById("txt_et_otro").value;
@@ -39,7 +45,7 @@ function iniciar_evento_participantes(){
                     datos.sub_etnia="";
                  }
              }else{
-                 mostrarMensaje("Selecciona una etnia");
+                mostrarMensaje("Selecciona una etnia");
                 return false; 
              }
              if(datos.genero!="--Genero--"){
@@ -47,7 +53,7 @@ function iniciar_evento_participantes(){
                     datos.genero_otro=document.getElementById("txtGenero").value;
                  }   
              }else{
-                mostrarMensaje("Debes seleccionar un genero");
+                mostrarMensaje("Debes seleccionar un género");
                 return false; 
              }
 
@@ -78,7 +84,7 @@ function iniciar_evento_participantes(){
              if(datos.escolaridad!="0"){
                 if(datos.escolaridad!="Ninguno"){
                     if(document.getElementById("txtTitulo").value==""){
-                         mostrarMensaje("Ingresa el titulo obtenido");
+                         mostrarMensaje("Ingresa el título obtenido");
                         return false;  
                     }
                  }else{
