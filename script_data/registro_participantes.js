@@ -38,6 +38,10 @@ function iniciar_evento_participantes(){
                 mostrarMensaje("Por favor ingresa solo números enteros positivos y sin puntos");
                 return false; 
              }
+             if(datos.documento.length <= 3){
+                mostrarMensaje("Por favor ingresa unnumero con mas de cuatro cifras valido para el documento");
+                return false; 
+             }
              if(datos.etnia!="0"){
                 if(datos.etnia=="Otro"){
                      datos.sub_etnia=document.getElementById("txt_et_otro").value;
@@ -111,7 +115,7 @@ function iniciar_evento_participantes(){
                registrarDatoOff(globales._URL+"controlador/controlador_participantes.php","crearParticipanteSinEvento",{datos:datos,id:pos},function(rs){
                         if(rs.respuesta==true){
                             mostrarMensaje(rs);
-                            alert('El usuario se registro con exito');
+                            //alert('El usuario se registro con exito');
                             //  window.open('','_parent',''); 
                             window.close(); 
                             //location.href="menuEventos.html";
