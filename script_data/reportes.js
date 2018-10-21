@@ -4454,6 +4454,7 @@ function dibujar_tabla_eventos(datos){
 		tr.appendChild(td);
 
 		tbl.appendChild(tr);		
+		var total_asistentes=0;
 	for(var f in datos){
 		//console.log(datos[f]);
 		var tr=document.createElement("tr");
@@ -4480,7 +4481,15 @@ function dibujar_tabla_eventos(datos){
 		td.className="mdl-data-table__cell--non-numeric";
 		tr.appendChild(td);
 
-		tbl.appendChild(tr);		}
+		tbl.appendChild(tr);
+		if(datos[f].cuantos_por_eventos!=null){
+			total_asistentes+=Number(datos[f].cuantos_por_eventos);		
+		}
+		
+
+	}
+
+	document.getElementById("h5TotalAsistentes").innerHTML=total_asistentes;
 
 }
 function dibujar_tabla_eventos_individual(datos){
