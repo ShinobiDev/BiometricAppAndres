@@ -974,3 +974,66 @@ PHP Error[31-08-18 10:28:59] => {1}=>{SELECT
                             FROM participantes WHERE estado_registro = 'verificado' OR estado_registro = 'registrado' OR estado_registro = 'participando'}
 PHP Error[31-08-18 10:28:59] => {1}=>{SELECT 
                              * FROM detalle_participantes}
+PHP Error[06-09-18 16:17:43] => {1}=>{SELECT id FROM participantes WHERE estado_registro = 'por_registrar' }
+PHP Error[06-09-18 16:19:23] => {1}=>{SELECT * FROM users WHERE  id = 63}
+PHP Error[06-09-18 16:19:23] => {1}=>{SELECT * FROM lineas WHERE  id = 8}
+PHP Error[06-09-18 16:19:23] => {1}=>{SELECT * FROM proceso WHERE  id = 27}
+PHP Error[06-09-18 16:19:23] => {1}=>{SELECT * FROM eventos WHERE  id = 10}
+PHP Error[06-09-18 16:19:23] => {1}=>{SELECT * FROM eventos WHERE  id = 5}
+PHP Error[06-09-18 16:19:23] => {1}=>{SELECT * FROM eventos WHERE  id = 6}
+PHP Error[09-10-18 16:25:36] => {1}=>{}
+PHP Error[09-10-18 16:25:45] => {1}=>{SELECT * FROM sincronizaciones ORDER BY fecha DESC LIMIT 1}
+PHP Error[09-10-18 16:25:52] => {1}=>{SELECT * FROM users WHERE  id = 46}
+PHP Error[09-10-18 16:25:52] => {1}=>{SELECT * FROM lineas WHERE  id = 1}
+PHP Error[09-10-18 16:25:52] => {1}=>{SELECT * FROM lineas WHERE  id = 2}
+PHP Error[09-10-18 16:25:52] => {1}=>{SELECT * FROM lineas WHERE  id = 3}
+PHP Error[09-10-18 16:25:52] => {1}=>{SELECT * FROM lineas WHERE  id = 4}
+PHP Error[09-10-18 16:25:52] => {1}=>{SELECT * FROM lineas WHERE  id = 5}
+PHP Error[09-10-18 16:25:52] => {1}=>{SELECT * FROM lineas WHERE  id = 6}
+PHP Error[09-10-18 16:25:52] => {1}=>{SELECT * FROM lineas WHERE  id = 7}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM lineas WHERE  id = 8}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 1}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 2}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 3}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 4}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 5}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 6}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 7}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 8}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 9}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 10}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 11}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 12}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 13}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 14}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 15}
+PHP Error[09-10-18 16:25:53] => {1}=>{SELECT * FROM proceso WHERE  id = 16}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 17}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 18}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 19}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 20}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 21}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 22}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 23}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 24}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 25}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 26}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM proceso WHERE  id = 27}
+PHP Error[09-10-18 16:25:54] => {1}=>{SELECT * FROM eventos WHERE  id = 12}
+PHP Error[09-10-18 16:33:09] => {1}=>{SELECT documento FROM participantes WHERE documento = '1.045.2562'}
+PHP Error[09-10-18 16:37:41] => {1}=>{SELECT documento FROM participantes WHERE documento = '1.202020.200202'}
+PHP Error[09-10-18 16:40:04] => {1}=>{SELECT documento FROM participantes WHERE documento = '1.20.202020.00'}
+PHP Error[09-10-18 16:48:38] => {1}=>{SELECT participantes.id,participantes.pri_nombre,participantes.seg_nombre,participantes.pri_apellido,participantes.seg_apellido,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE participantes.estado_registro = 'participando' AND detalle_participantes.event_id = '12' }
+PHP Error[09-10-18 16:48:38] => {1}=>{SELECT participantes.id,estado_registro,pri_apellido,seg_apellido,pri_nombre,seg_nombre,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE  event_id ='12' AND (estado_registro = 'verificado' OR estado_registro = 'participando') ORDER BY detalle_participantes.updated_at DESC LIMIT 1}
+PHP Error[09-10-18 16:48:41] => {1}=>{SELECT participantes.id,estado_registro,pri_apellido,seg_apellido,pri_nombre,seg_nombre,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE  event_id ='12' AND (estado_registro = 'verificado' OR estado_registro = 'participando') ORDER BY detalle_participantes.updated_at DESC LIMIT 1}
+PHP Error[09-10-18 16:48:44] => {1}=>{SELECT participantes.id,estado_registro,pri_apellido,seg_apellido,pri_nombre,seg_nombre,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE  event_id ='12' AND (estado_registro = 'verificado' OR estado_registro = 'participando') ORDER BY detalle_participantes.updated_at DESC LIMIT 1}
+PHP Error[09-10-18 17:36:12] => {1}=>{SELECT id FROM participantes WHERE estado_registro = 'por_registrar' }
+PHP Error[09-10-18 17:36:18] => {1}=>{SELECT participantes.id,participantes.pri_nombre,participantes.seg_nombre,participantes.pri_apellido,participantes.seg_apellido,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE participantes.estado_registro = 'participando' AND detalle_participantes.event_id = '12' }
+PHP Error[09-10-18 17:36:18] => {1}=>{SELECT participantes.id,estado_registro,pri_apellido,seg_apellido,pri_nombre,seg_nombre,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE  event_id ='12' AND (estado_registro = 'verificado' OR estado_registro = 'participando') ORDER BY detalle_participantes.updated_at DESC LIMIT 1}
+PHP Error[09-10-18 17:36:21] => {1}=>{SELECT participantes.id,estado_registro,pri_apellido,seg_apellido,pri_nombre,seg_nombre,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE  event_id ='12' AND (estado_registro = 'verificado' OR estado_registro = 'participando') ORDER BY detalle_participantes.updated_at DESC LIMIT 1}
+PHP Error[09-10-18 17:36:24] => {1}=>{SELECT participantes.id,estado_registro,pri_apellido,seg_apellido,pri_nombre,seg_nombre,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE  event_id ='12' AND (estado_registro = 'verificado' OR estado_registro = 'participando') ORDER BY detalle_participantes.updated_at DESC LIMIT 1}
+PHP Error[09-10-18 17:36:27] => {1}=>{SELECT participantes.id,estado_registro,pri_apellido,seg_apellido,pri_nombre,seg_nombre,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE  event_id ='12' AND (estado_registro = 'verificado' OR estado_registro = 'participando') ORDER BY detalle_participantes.updated_at DESC LIMIT 1}
+PHP Error[09-10-18 17:36:30] => {1}=>{SELECT participantes.id,estado_registro,pri_apellido,seg_apellido,pri_nombre,seg_nombre,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE  event_id ='12' AND (estado_registro = 'verificado' OR estado_registro = 'participando') ORDER BY detalle_participantes.updated_at DESC LIMIT 1}
+PHP Error[09-10-18 17:36:33] => {1}=>{SELECT participantes.id,estado_registro,pri_apellido,seg_apellido,pri_nombre,seg_nombre,participantes.updated_at FROM participantes INNER JOIN detalle_participantes ON participantes.documento = detalle_participantes.user_id WHERE  event_id ='12' AND (estado_registro = 'verificado' OR estado_registro = 'participando') ORDER BY detalle_participantes.updated_at DESC LIMIT 1}
+PHP Error[09-10-18 17:38:13] => {1}=>{SELECT documento FROM participantes WHERE documento = '1.0000000.0.000'}
+PHP Error[09-10-18 17:38:56] => {1}=>{SELECT proceso.id,proceso.nombre_proceso FROM proceso INNER JOIN lineas ON proceso.fk_id_linea = lineas.id WHERE lineas.id = ''}
